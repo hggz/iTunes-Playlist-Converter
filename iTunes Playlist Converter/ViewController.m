@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "iTunes.h"
+#import "Spotify.h"
 
 @implementation ViewController
 
@@ -15,6 +16,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+    SpotifyApplication *spotify = [SBApplication applicationWithBundleIdentifier:@"com.spotify.client"];
     if ([iTunes isRunning]) {
         NSArray *sources = [[iTunes sources] get];
         NSArray *libs = [sources filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"kind == %i", iTunesESrcLibrary]];
@@ -28,6 +30,10 @@
                 }
             }
         }
+    }
+    
+    if ([spotify isRunning]) {
+        NSLog(@"spotify is running!");
     }
 }
 

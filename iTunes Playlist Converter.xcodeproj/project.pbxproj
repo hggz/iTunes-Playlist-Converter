@@ -43,6 +43,7 @@
 		90D83EAF1B44FCA200633A1D /* iTunes_Playlist_ConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunes_Playlist_ConverterTests.m; sourceTree = "<group>"; };
 		90D83EB91B45116A00633A1D /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		90D83EBB1B45121200633A1D /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		90D83EBC1B45199200633A1D /* Spotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		90D83E921B44FCA200633A1D /* iTunes Playlist Converter */ = {
 			isa = PBXGroup;
 			children = (
+				90D83EBC1B45199200633A1D /* Spotify.h */,
 				90D83EBB1B45121200633A1D /* iTunes.h */,
 				90D83E951B44FCA200633A1D /* AppDelegate.h */,
 				90D83E961B44FCA200633A1D /* AppDelegate.m */,
